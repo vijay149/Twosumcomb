@@ -21,6 +21,7 @@
     return sharedHelper;
 }
 
+
 - (id)init
 {
     self = [super init];
