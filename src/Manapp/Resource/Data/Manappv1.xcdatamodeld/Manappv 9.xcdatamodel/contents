@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Accessories" representedClassName="Accessories" syncable="YES">
+        <attribute name="accessoriesID" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fkAccessoriesToPartnerAvatar" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PartnerAvatar" inverseName="fkPartnerAvatarToAccessories" inverseEntity="PartnerAvatar" syncable="YES"/>
+    </entity>
+    <entity name="Bottom" representedClassName="Bottom" syncable="YES">
+        <attribute name="bottomID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <relationship name="fkBottomToPartnerAvatar" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PartnerAvatar" inverseName="fkPartnerAvatarToBottom" inverseEntity="PartnerAvatar" syncable="YES"/>
+    </entity>
+    <entity name="Color" representedClassName="Color" syncable="YES">
+        <attribute name="colorCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="colorID" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fkColorToEye" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Eye" inverseName="fkEyeToColor" inverseEntity="Eye" syncable="YES"/>
+        <relationship name="fkColorToHair" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hair" inverseName="fkHairToColor" inverseEntity="Hair" syncable="YES"/>
+        <relationship name="fkColorToSkin" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Skin" inverseName="fkSkinToColor" inverseEntity="Skin" syncable="YES"/>
+    </entity>
+    <entity name="ErogeneousZone" representedClassName="ErogeneousZone" syncable="YES">
+        <attribute name="erogeneousZoneID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="fkEroZoneToPartnerEroZone" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PartnerEroZone" inverseName="fkPartnerEroZoneToEroZone" inverseEntity="PartnerEroZone" syncable="YES"/>
+    </entity>
+    <entity name="Event" representedClassName="Event" syncable="YES">
+        <attribute name="eventEndTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="eventID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recurrence" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recurringID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reminder" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="partner" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Partner" inverseName="events" inverseEntity="Partner" syncable="YES"/>
+    </entity>
+    <entity name="Eye" representedClassName="Eye" syncable="YES">
+        <attribute name="colorID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="eyeID" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fkEyeToColor" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Color" inverseName="fkColorToEye" inverseEntity="Color" syncable="YES"/>
+        <relationship name="fkEyeToPartnerAvatar" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PartnerAvatar" inverseName="fkPartnerAvatarToEye" inverseEntity="PartnerAvatar" syncable="YES"/>
+    </entity>
+    <entity name="Hair" representedClassName="Hair" syncable="YES">
+        <attribute name="colorID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hairID" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="hairStyleID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="fkHairToColor" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Color" inverseName="fkColorToHair" inverseEntity="Color" syncable="YES"/>
+        <relationship name="fkHairToHairStyle" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="HairStyle" inverseName="fkHairStyleToFHair" inverseEntity="HairStyle" syncable="YES"/>
+        <relationship name="fkHairToPartnerAvatar" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PartnerAvatar" inverseName="fkPartnerAvatarToHair" inverseEntity="PartnerAvatar" syncable="YES"/>
+    </entity>
+    <entity name="HairStyle" representedClassName="HairStyle" syncable="YES">
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hairStyleID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fkHairStyleToFHair" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hair" inverseName="fkHairToHairStyle" inverseEntity="Hair" syncable="YES"/>
+    </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES">
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURLFormat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="itemID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="itemCategory" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ItemCategory" inverseName="items" inverseEntity="ItemCategory" syncable="YES"/>
+        <relationship name="itemToAvatar" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ItemToAvatar" inverseName="item" inverseEntity="ItemToAvatar" syncable="YES"/>
+    </entity>
+    <entity name="ItemCategory" representedClassName="ItemCategory" syncable="YES">
+        <attribute name="categoryID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zIndex" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="itemCategory" inverseEntity="Item" syncable="YES"/>
+    </entity>
+    <entity name="ItemToAvatar" representedClassName="ItemToAvatar" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="itemToAvatar" inverseEntity="Item" syncable="YES"/>
+        <relationship name="partner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Partner" inverseName="avatarToItem" inverseEntity="Partner" syncable="YES"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES">
+        <attribute name="categoryA" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryB" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="moodHigher" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="moodLower" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="secondMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="subCategoryA" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subCategoryB" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Note" representedClassName="Note" syncable="YES">
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noteID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="partner" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Partner" inverseName="notes" inverseEntity="Partner" syncable="YES"/>
+    </entity>
+    <entity name="Partner" representedClassName="Partner" syncable="YES">
+        <attribute name="birthControl" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="calendarType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="dateOfBirth" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="eyeColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="isNewForCycle" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="lastPeriod" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastUsedTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="partnerID" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="setupProgress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="skinColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="avatarToItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ItemToAvatar" inverseName="partner" inverseEntity="ItemToAvatar" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Event" inverseName="partner" inverseEntity="Event" syncable="YES"/>
+        <relationship name="fkPartnerToPartnerAvatar" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PartnerAvatar" inverseName="fkPartnerAvatarToPartner" inverseEntity="PartnerAvatar" syncable="YES"/>
+        <relationship name="fkPartnerToPartnerEroZone" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="PartnerEroZone" inverseName="fkPartnerEroZoneToPartner" inverseEntity="PartnerEroZone" syncable="YES"/>
+        <relationship name="information" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PartnerInformation" inverseName="partner" inverseEntity="PartnerInformation" syncable="YES"/>
+        <relationship name="measurements" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PartnerMeasurement" inverseName="partner" inverseEntity="PartnerMeasurement" syncable="YES"/>
+        <relationship name="notes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="partner" inverseEntity="Note" syncable="YES"/>
+        <relationship name="partnerMoods" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PartnerMood" inverseName="partner" inverseEntity="PartnerMood" syncable="YES"/>
+        <relationship name="preferences" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PreferenceCategory" inverseName="partner" inverseEntity="PreferenceCategory" syncable="YES"/>
+    </entity>
+    <entity name="PartnerAvatar" representedClassName="PartnerAvatar" syncable="YES">
+        <attribute name="accessoriesID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="bottomID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="eyeID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="hairID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="partnerAvatarID" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="partnerID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="shoesID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="skinID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="topID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="fkPartnerAvatarToAccessories" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Accessories" inverseName="fkAccessoriesToPartnerAvatar" inverseEntity="Accessories" syncable="YES"/>
+        <relationship name="fkPartnerAvatarToBottom" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Bottom" inverseName="fkBottomToPartnerAvatar" inverseEntity="Bottom" syncable="YES"/>
+        <relationship name="fkPartnerAvatarToEye" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Eye" inverseName="fkEyeToPartnerAvatar" inverseEntity="Eye" syncable="YES"/>
+        <relationship name="fkPartnerAvatarToHair" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Hair" inverseName="fkHairToPartnerAvatar" inverseEntity="Hair" syncable="YES"/>
+        <relationship name="fkPartnerAvatarToPartner" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Partner" inverseName="fkPartnerToPartnerAvatar" inverseEntity="Partner" syncable="YES"/>
+        <relationship name="fkPartnerAvatarToShoes" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Shoes" inverseName="fkShoesToPartnerAvatar" inverseEntity="Shoes" syncable="YES"/>
+        <relationship name="fkPartnerAvatarToSkin" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Skin" inverseName="fkSkinToPartnerAvatar" inverseEntity="Skin" syncable="YES"/>
+        <relationship name="fkPartnerAvatarToTop" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Top" inverseName="fkTopToPartnerAvatar" inverseEntity="Top" syncable="YES"/>
+    </entity>
+    <entity name="PartnerEroZone" representedClassName="PartnerEroZone" syncable="YES">
+        <attribute name="eroZoneID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="partnerEroZoneID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="partnerID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fkPartnerEroZoneToEroZone" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ErogeneousZone" inverseName="fkEroZoneToPartnerEroZone" inverseEntity="ErogeneousZone" syncable="YES"/>
+        <relationship name="fkPartnerEroZoneToPartner" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Partner" inverseName="fkPartnerToPartnerEroZone" inverseEntity="Partner" syncable="YES"/>
+    </entity>
+    <entity name="PartnerInformation" representedClassName="PartnerInformation" syncable="YES">
+        <attribute name="infoID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PartnerInformationItem" inverseName="information" inverseEntity="PartnerInformationItem" syncable="YES"/>
+        <relationship name="parentCategory" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PartnerInformation" inverseName="subCategories" inverseEntity="PartnerInformation" syncable="YES"/>
+        <relationship name="partner" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Partner" inverseName="information" inverseEntity="Partner" syncable="YES"/>
+        <relationship name="subCategories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PartnerInformation" inverseName="parentCategory" inverseEntity="PartnerInformation" syncable="YES"/>
+    </entity>
+    <entity name="PartnerInformationItem" representedClassName="PartnerInformationItem" syncable="YES">
+        <attribute name="itemID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="information" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PartnerInformation" inverseName="items" inverseEntity="PartnerInformation" syncable="YES"/>
+    </entity>
+    <entity name="PartnerMeasurement" representedClassName="PartnerMeasurement" syncable="YES">
+        <attribute name="measurementID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PartnerMeasurementItem" inverseName="measurement" inverseEntity="PartnerMeasurementItem" syncable="YES"/>
+        <relationship name="partner" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Partner" inverseName="measurements" inverseEntity="Partner" syncable="YES"/>
+    </entity>
+    <entity name="PartnerMeasurementItem" representedClassName="PartnerMeasurementItem" syncable="YES">
+        <attribute name="itemID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="measurement" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PartnerMeasurement" inverseName="items" inverseEntity="PartnerMeasurement" syncable="YES"/>
+    </entity>
+    <entity name="PartnerMood" representedClassName="PartnerMood" syncable="YES">
+        <attribute name="addedTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="isSample" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="moodID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="moodValue" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="partner" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Partner" inverseName="partnerMoods" inverseEntity="Partner" syncable="YES"/>
+    </entity>
+    <entity name="PartnerSetup" representedClassName="PartnerSetup" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="partnerSetupID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="PreferenceCategory" representedClassName="PreferenceCategory" syncable="YES">
+        <attribute name="level" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preferenceID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PreferenceItem" inverseName="category" inverseEntity="PreferenceItem" syncable="YES"/>
+        <relationship name="parentCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PreferenceCategory" inverseName="subCategories" inverseEntity="PreferenceCategory" syncable="YES"/>
+        <relationship name="partner" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Partner" inverseName="preferences" inverseEntity="Partner" syncable="YES"/>
+        <relationship name="subCategories" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PreferenceCategory" inverseName="parentCategory" inverseEntity="PreferenceCategory" syncable="YES"/>
+    </entity>
+    <entity name="PreferenceItem" representedClassName="PreferenceItem" syncable="YES">
+        <attribute name="isLike" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="itemID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="category" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PreferenceCategory" inverseName="items" inverseEntity="PreferenceCategory" syncable="YES"/>
+    </entity>
+    <entity name="Shoes" representedClassName="Shoes" syncable="YES">
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shoesID" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <relationship name="fkShoesToPartnerAvatar" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PartnerAvatar" inverseName="fkPartnerAvatarToShoes" inverseEntity="PartnerAvatar" syncable="YES"/>
+    </entity>
+    <entity name="Skin" representedClassName="Skin" syncable="YES">
+        <attribute name="colorID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skinID" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <relationship name="fkSkinToColor" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Color" inverseName="fkColorToSkin" inverseEntity="Color" syncable="YES"/>
+        <relationship name="fkSkinToPartnerAvatar" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PartnerAvatar" inverseName="fkPartnerAvatarToSkin" inverseEntity="PartnerAvatar" syncable="YES"/>
+    </entity>
+    <entity name="Top" representedClassName="Top" syncable="YES">
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="topID" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <relationship name="fkTopToPartnerAvatar" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PartnerAvatar" inverseName="fkPartnerAvatarToTop" inverseEntity="PartnerAvatar" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Accessories" positionX="-29115954" positionY="-7951770" width="128" height="105"/>
+        <element name="Bottom" positionX="-29115954" positionY="-7951770" width="128" height="105"/>
+        <element name="Color" positionX="-29115954" positionY="-7951770" width="128" height="135"/>
+        <element name="ErogeneousZone" positionX="-29115954" positionY="-7951770" width="128" height="120"/>
+        <element name="Event" positionX="-29115954" positionY="-7951770" width="128" height="210"/>
+        <element name="Eye" positionX="-29115954" positionY="-7951770" width="128" height="120"/>
+        <element name="Hair" positionX="-29115954" positionY="-7951770" width="128" height="150"/>
+        <element name="HairStyle" positionX="-29115954" positionY="-7951770" width="128" height="120"/>
+        <element name="Item" positionX="160" positionY="192" width="128" height="180"/>
+        <element name="ItemCategory" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="ItemToAvatar" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Message" positionX="160" positionY="192" width="128" height="225"/>
+        <element name="Note" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Partner" positionX="-194771" positionY="-1247040" width="128" height="390"/>
+        <element name="PartnerAvatar" positionX="-29255744" positionY="-9194032" width="155" height="300"/>
+        <element name="PartnerEroZone" positionX="-2293812" positionY="-2476161" width="128" height="135"/>
+        <element name="PartnerInformation" positionX="-268263" positionY="-1221273" width="128" height="165"/>
+        <element name="PartnerInformationItem" positionX="-194976" positionY="-1246815" width="128" height="105"/>
+        <element name="PartnerMeasurement" positionX="-2293812" positionY="-2476161" width="128" height="135"/>
+        <element name="PartnerMeasurementItem" positionX="-29115954" positionY="-7951770" width="128" height="105"/>
+        <element name="PartnerMood" positionX="-194553" positionY="-1247082" width="128" height="120"/>
+        <element name="PartnerSetup" positionX="-29115954" positionY="-7951770" width="128" height="90"/>
+        <element name="PreferenceCategory" positionX="-2293497" positionY="-2475945" width="128" height="165"/>
+        <element name="PreferenceItem" positionX="-29115954" positionY="-7951770" width="128" height="120"/>
+        <element name="Shoes" positionX="-29115954" positionY="-7951770" width="128" height="105"/>
+        <element name="Skin" positionX="-29115632" positionY="-7951476" width="128" height="120"/>
+        <element name="Top" positionX="-29115686" positionY="-7951842" width="128" height="105"/>
+    </elements>
+</model>

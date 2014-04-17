@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Manapp/Library/Tapku/src/TapkuLibrary/TKCalendarWeekTimelineView.m"
+            timestampString = "410406308.166101"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "713"
+            endingLineNumber = "713"
+            landmarkName = "-numberOfEventFromRecurringWithDisplayDay:withTKEvent:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Manapp/ViewController/HomepageViewController.m"
+            timestampString = "409564538.981693"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1212"
+            endingLineNumber = "1212"
+            landmarkName = "-flowView:didScrollToPageAtIndex:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[HomepageViewController flowView:didScrollToPageAtIndex:]"
+                  moduleName = "Manapp"
+                  urlString = "file:///Volumes/Data/workspace/seta/projects/manapp/Manapp/ViewController/HomepageViewController.m"
+                  timestampString = "410692285.812678"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1212"
+                  endingLineNumber = "1212"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[HomepageViewController flowView:didScrollToPageAtIndex:]"
+                  moduleName = "Manapp"
+                  urlString = "file:///Volumes/Data/workspace/seta/projects/manapp/Manapp/ViewController/HomepageViewController.m"
+                  timestampString = "410692285.813053"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1212"
+                  endingLineNumber = "1212"
+                  offsetFromSymbolStart = "1696">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Manapp/ViewController/MonthlyCalendarViewController.m"
+            timestampString = "410410486.724813"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
+            landmarkName = "-calendarMonthView:eventsFromDate:toDate:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Manapp/Model/DatabaseHelper.m"
+            timestampString = "410410491.465047"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2027"
+            endingLineNumber = "2027"
+            landmarkName = "-getAllOccurEventFromDate:toDate:forPartner:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DatabaseHelper getAllOccurEventFromDate:toDate:forPartner:]"
+                  moduleName = "Manapp"
+                  urlString = "file:///Volumes/Data/workspace/seta/projects/manapp/Manapp/Model/DatabaseHelper.m"
+                  timestampString = "410692285.814086"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2027"
+                  endingLineNumber = "2027"
+                  offsetFromSymbolStart = "563">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DatabaseHelper getAllOccurEventFromDate:toDate:forPartner:]"
+                  moduleName = "Manapp"
+                  urlString = "file:///Volumes/Data/workspace/seta/projects/manapp/Manapp/Model/DatabaseHelper.m"
+                  timestampString = "410692285.814545"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2027"
+                  endingLineNumber = "2027"
+                  offsetFromSymbolStart = "2254">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Manapp/Library/Tapku/src/TapkuLibrary/TKCalendarWeekTimelineView.m"
+            timestampString = "410411212.18904"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "734"
+            endingLineNumber = "734"
+            landmarkName = "-numberOfEventFromRecurringWithDisplayDay:withEvents:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

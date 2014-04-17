@@ -1,0 +1,58 @@
+//
+//  CustomPickerView.m
+//  IKEA
+//
+//  Created by Demigod on 16/01/2013.
+//  Copyright (c) 2013 MEE. All rights reserved.
+//
+
+#import "CustomPickerView.h"
+
+@implementation CustomPickerView
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        // Initialization code
+    }
+    return self;
+}
+
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect
+{
+    // Drawing code
+}
+*/
+
+#pragma mark - event handler
+
+- (IBAction)btnDone_touchUpInside:(id)sender {
+    [self.delegate didClickDoneInCustomPickerView:self];
+}
+
+- (IBAction)btnCancel_touchUpInside:(id)sender {
+    [self.delegate didClickCancelInCustomPickerView:self];
+}
+
+#pragma mark - picker view datasource
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return [self.delegate numberOfComponentsInCustomPickerView:self];
+}
+
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    return [self.delegate customPickerView:self numberOfRowsInComponent:component];
+}
+
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    return [self.delegate customPickerView:self titleForRow:row forComponent:component];
+}
+
+#pragma mark - picker view delegate
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    [self.delegate customPickerView:self didSelectRow:row inComponent:component];
+}
+@end

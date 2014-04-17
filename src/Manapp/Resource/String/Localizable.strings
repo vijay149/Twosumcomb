@@ -1,0 +1,119 @@
+/* 
+  Localizable.strings
+  Manapp
+
+  Created by Demigod on 04/01/2013.
+  Copyright (c) 2013 Seta. All rights reserved.
+*/
+
+//Add Additional Item View Controller
+"Category name cannot be blank!" = "Category name cannot be blank!";
+"Add new category successfully!" = "Add new category successfully!";
+"Fail to add new category!" = "Fail to add new category!";
+"Category Deleted" = "Category Deleted";
+"Cannot delete this category!" = "Cannot delete this category!";
+"Information Deleted" = "Information Deleted";
+"You will be deleting all informations in %@" = "You will be deleting all informations in %@";
+"Information saved" = "Information saved";
+"Cannot save information!" = "Cannot save information!";
+"\n\nPlease select a name for your new category." = "\n\nPlease select a name for your new category.";
+"A category with the same name exists" = "A category with the same name exists";
+"Delete all" = "Delete all";
+"Add new category" = "Add new category";
+
+//AddEventViewController
+"Event Deleted Successfully" = "Event Deleted Successfully";
+"Please give this event a title!" = "Please give this event a title!";
+"You didn't select a partner. Please select one first!" = "You didn't select a partner. Please select one first!";
+"Successfully add new event fot this partner" = "Successfully add new event fot this partner";
+"Cannot add event for this partner!" = "Cannot add event for this partner!";
+
+//AdditionalInformationViewController
+"You don't have any data yet, please input some data first." = "You don't have any data yet, please input some data first.";
+"Additional Information" = "Additional Information";
+"Enter Additional Information Here..." = "Enter Additional Information Here...";
+"Add an additional Info" = "Add an additional Info";
+"Edit an additional Info" = "Edit an additional Info";
+"Select a category and start entering information about %@" = "Select a category and start entering information about %@";
+"Delete" = "Delete";
+
+//AddMeasurementItemController
+"Please select a category and start entering the measurements for %@." = "Please select a category and start entering the measurements for %@.";
+"Measurement Deleted" = "Measurement Deleted";
+"You will be deleting all measurements in %@" = "You will be deleting all measurements in %@";
+"Measurement saved" = "Measurement saved";
+"Cannot save measurement!" = "Cannot save measurement!";
+"Are you sure you want to restore all the default information categories?" = "Are you sure you want to restore all the default information categories?";
+
+//AddPreferenceItemViewController
+"Preference Deleted" = "Preference Deleted";
+"You will be deleting all preference in %@" = "You will be deleting all preference in %@";
+"Preference saved" = "Preference saved";
+"Successfully Saved" = "Successfully Saved";
+"Successfully Saved!" = "Successfully Saved!";
+
+//CreatePartnerViewController
+"Partner name was left blank!" = "Partner name was left blank!";
+"Partner deleted" = "Partner deleted";
+"Could not delete the current partner" = "Could not delete the current partner";
+"You must create a partner before going to the home screen!" = "You must create a partner before going to the home screen!";
+"Do you want to cancel creating a new partner or Save this new partner?" = "Do you want to cancel creating a new partner or Save this new partner?";
+"Please give your partner a name!" = "Please give your partner a name!";
+"Save successfully!" = "Save successfully!";
+"Do you want to delete this partner?" = "Do you want to delete this partner?";
+"There is a partner with the same name.Please change this partner name" = "There is a partner with the same name.Please change this partner name";
+"Please select a partner first" = "Please select a partner first";
+
+//homepage
+"Please activate your account to create more partner!" = "Please activate your account to create more partner!";
+"Reach maximum number of Partner allowed (%d partners)." = "Reach maximum number of Partner allowed (%d partners).";
+"Could not delete current partner" = "Could not delete current partner";
+"Create new partner" = "Create new partner";
+"Please select a partner first!" = "Please select a partner first!";
+"To create your 2nd Partner you need to verify your email address, click the OK to resend the verification email and then check your email" = "To create your 2nd Partner you need to verify your email address, click the OK to resend the verification email and then check your email";
+//bubble talk in homepage
+"%@ Says:" = "%@ Says:";
+"We don't have any event today yet!" = "We don't have any event today yet!";
+"Don’t forget we have the following activity planned for today : %@ at %@." = "Don’t forget we have the following activity planned for today : %@ at %@.";
+
+//Login scene
+"Please enter your username and password" = "Please enter your username and password";
+"You are currently blocked because you failed to login too many time. Please wait for %d hour, %d minutes, %d seconds until you can login again" = "You are currently blocked because you failed to login too many time. Please wait for %d hour, %d minutes, %d seconds until you can login again";
+"There is an error with the server. We cannot process your request." = "There is an error with the server. We cannot process your request.";
+"\n\nPlease input your username or email to verify that you are the owner of this account." = "\n\nPlease input your username or email to verify that you are the owner of this account.";
+"If you don't remember your password, please select 'Forgot password' to renew your password." = "If you don't remember your password, please select 'Forgot password' to renew your password.";
+"You failed to login to many time, you will be block for one minute." = "You failed to login to many time, you will be block for one minute.";
+"You failed to login to many time, you will be block for two minute." = "You failed to login to many time, you will be block for two minute.";
+"Please enter the email address associated with your account and an email will be sent to you" = "Please enter the email address associated with your account and an email will be sent to you";
+"Email Address" = "Email Address";
+"Home" = "Home";
+"Back" = "Back";
+"Save" = "Save";
+//MeasurementViewController
+"Are you sure you want to restore all the default measurement categories?" = "Are you sure you want to restore all the default measurement categories?";
+"Restore Default Categories" = "Restore Default Categories";
+
+//MonthCalendarViewController
+"Please enter the first day of your's partner last period" = "Please enter the first day of your's partner last period";
+"Cyclical data saved" = "Cyclical data saved";
+"Please create partner before editing" = "Please create partner before editing";
+
+//PreferenceViewController
+"Are you sure you want to restore all the default preference categories?" = "Are you sure you want to restore all the default preference categories?";
+"Please select a category and start entering the likes and dislikes for %@." = "Please select a category and start entering the likes and dislikes for %@.";
+
+//SignupViewController
+"You must fill in all of the fields" = "You must fill in all of the fields";
+"Password and Re-type Password not same" = "Password and Re-type Password not same";
+"Your account has been created" = "Your account has been created";
+"Your email already exist, you can use the forgot password feature to get your password renewed." = "Your email already exist, you can use the forgot password feature to get your password renewed.";
+"Cancel" = "Cancel";
+
+//notification
+"It is time to set your partner's mood!" = "It is time to set your partner's mood!";
+
+//calendar
+"All reminder were deleted!" = "All reminder were deleted!";
+
+//Ero zone
+"Click a body part to enter customized notes and reminders about %@'s body" = "Click a body part to enter customized notes and reminders about %@'s body";
