@@ -49,6 +49,8 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
+#define kRepeatYear 50
+
 +(id) sharedHelper{
     static DatabaseHelper* databaseManager = nil;
     static dispatch_once_t onceToken;
@@ -1755,7 +1757,7 @@
         NSMutableArray *events = [[[NSMutableArray alloc] init] autorelease];
         
         NSDate *startTime = partner.dateOfBirth;
-        NSDate *endTime = [partner.dateOfBirth dateByAddingYears:30];
+        NSDate *endTime = [partner.dateOfBirth dateByAddingYears:kRepeatYear];
         
         while ([startTime compare:endTime] != NSOrderedDescending) {
             Event* partnerEvent = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
@@ -1797,7 +1799,7 @@
         NSMutableArray *events = [[[NSMutableArray alloc] init] autorelease];
         
         NSDate *startTime = partner.firstDate;
-        NSDate *endTime = [partner.firstDate dateByAddingYears:30];
+        NSDate *endTime = [partner.firstDate dateByAddingYears:kRepeatYear];
         
         while ([startTime compare:endTime] != NSOrderedDescending) {
             Event* partnerEvent = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
@@ -1806,11 +1808,11 @@
                 return events;
             }
             partnerEvent.eventID = [NSString generateGUID];
-            partnerEvent.eventName = [NSString stringWithFormat:@"First Meet Date %@",partner.name];
+            partnerEvent.eventName = [NSString stringWithFormat:@"The day you first met %@",partner.name];
             partnerEvent.eventTime = startTime;
             partnerEvent.eventEndTime = [startTime dateByAddDays:1];
             partnerEvent.finishTime = [startTime dateByAddDays:1];
-            partnerEvent.note = [NSString stringWithFormat:@"First Meet Date %@",partner.name];;
+            partnerEvent.note = [NSString stringWithFormat:@"The day you first met %@",partner.name];;
             partnerEvent.partner = partner;
             partnerEvent.recurrence = nil;
             partnerEvent.reminder = nil;

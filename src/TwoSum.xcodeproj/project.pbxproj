@@ -1365,8 +1365,6 @@
 		AF82DBD217EC5BC00011954C /* btnEditPartner2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF82DBCE17EC5BC00011954C /* btnEditPartner2@2x.png */; };
 		AF91246017EA9DF0002A31B0 /* shirt_dress_for_tutu_female_4.png in Resources */ = {isa = PBXBuildFile; fileRef = AF91245617EA9DF0002A31B0 /* shirt_dress_for_tutu_female_4.png */; };
 		AF91246117EA9DF0002A31B0 /* shirt_dress_for_tutu_female_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF91245717EA9DF0002A31B0 /* shirt_dress_for_tutu_female_4@2x.png */; };
-		AF91246217EA9DF0002A31B0 /* shirt_dress_for_tutu_female_3.png in Resources */ = {isa = PBXBuildFile; fileRef = AF91245817EA9DF0002A31B0 /* shirt_dress_for_tutu_female_3.png */; };
-		AF91246317EA9DF0002A31B0 /* shirt_dress_for_tutu_female_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF91245917EA9DF0002A31B0 /* shirt_dress_for_tutu_female_3@2x.png */; };
 		AF91246417EA9DF0002A31B0 /* shirt_dress_for_tutu_female_2.png in Resources */ = {isa = PBXBuildFile; fileRef = AF91245A17EA9DF0002A31B0 /* shirt_dress_for_tutu_female_2.png */; };
 		AF91246517EA9DF0002A31B0 /* shirt_dress_for_tutu_female_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF91245B17EA9DF0002A31B0 /* shirt_dress_for_tutu_female_2@2x.png */; };
 		AF91246617EA9DF0002A31B0 /* shirt_dress_for_tutu_female_1.png in Resources */ = {isa = PBXBuildFile; fileRef = AF91245C17EA9DF0002A31B0 /* shirt_dress_for_tutu_female_1.png */; };
@@ -1537,6 +1535,8 @@
 		CCAD7DA11793A50A00710FCA /* shoe_boot_female_4.png in Resources */ = {isa = PBXBuildFile; fileRef = CCAD7D941793A50A00710FCA /* shoe_boot_female_4.png */; };
 		CCAD7DA21793A50A00710FCA /* shoe_boot_female_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CCAD7D951793A50A00710FCA /* shoe_boot_female_1.png */; };
 		CCAD7DA31793A50A00710FCA /* shoe_boot_female_0.png in Resources */ = {isa = PBXBuildFile; fileRef = CCAD7D961793A50A00710FCA /* shoe_boot_female_0.png */; };
+		EB37691419052D040055CE43 /* shirt_dress_for_tutu_female_3.png in Resources */ = {isa = PBXBuildFile; fileRef = EB37691219052D040055CE43 /* shirt_dress_for_tutu_female_3.png */; };
+		EB37691519052D040055CE43 /* shirt_dress_for_tutu_female_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB37691319052D040055CE43 /* shirt_dress_for_tutu_female_3@2x.png */; };
 		EB5BE39718DA93A300BD51B8 /* shoe_high_boot_female_4.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5BE39518DA93A300BD51B8 /* shoe_high_boot_female_4.png */; };
 		EB5BE39818DA93A300BD51B8 /* shoe_high_boot_female_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5BE39618DA93A300BD51B8 /* shoe_high_boot_female_4@2x.png */; };
 		EB5BE3A618DA9BB300BD51B8 /* shoe_high_boot_female_0.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5BE3A418DA9BB300BD51B8 /* shoe_high_boot_female_0.png */; };
@@ -3107,8 +3107,6 @@
 		AF82DBCE17EC5BC00011954C /* btnEditPartner2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnEditPartner2@2x.png"; sourceTree = "<group>"; };
 		AF91245617EA9DF0002A31B0 /* shirt_dress_for_tutu_female_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirt_dress_for_tutu_female_4.png; sourceTree = "<group>"; };
 		AF91245717EA9DF0002A31B0 /* shirt_dress_for_tutu_female_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shirt_dress_for_tutu_female_4@2x.png"; sourceTree = "<group>"; };
-		AF91245817EA9DF0002A31B0 /* shirt_dress_for_tutu_female_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirt_dress_for_tutu_female_3.png; sourceTree = "<group>"; };
-		AF91245917EA9DF0002A31B0 /* shirt_dress_for_tutu_female_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shirt_dress_for_tutu_female_3@2x.png"; sourceTree = "<group>"; };
 		AF91245A17EA9DF0002A31B0 /* shirt_dress_for_tutu_female_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirt_dress_for_tutu_female_2.png; sourceTree = "<group>"; };
 		AF91245B17EA9DF0002A31B0 /* shirt_dress_for_tutu_female_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shirt_dress_for_tutu_female_2@2x.png"; sourceTree = "<group>"; };
 		AF91245C17EA9DF0002A31B0 /* shirt_dress_for_tutu_female_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirt_dress_for_tutu_female_1.png; sourceTree = "<group>"; };
@@ -3282,6 +3280,8 @@
 		CCAD7D941793A50A00710FCA /* shoe_boot_female_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoe_boot_female_4.png; sourceTree = "<group>"; };
 		CCAD7D951793A50A00710FCA /* shoe_boot_female_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoe_boot_female_1.png; sourceTree = "<group>"; };
 		CCAD7D961793A50A00710FCA /* shoe_boot_female_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoe_boot_female_0.png; sourceTree = "<group>"; };
+		EB37691219052D040055CE43 /* shirt_dress_for_tutu_female_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirt_dress_for_tutu_female_3.png; sourceTree = "<group>"; };
+		EB37691319052D040055CE43 /* shirt_dress_for_tutu_female_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shirt_dress_for_tutu_female_3@2x.png"; sourceTree = "<group>"; };
 		EB5BE39518DA93A300BD51B8 /* shoe_high_boot_female_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoe_high_boot_female_4.png; sourceTree = "<group>"; };
 		EB5BE39618DA93A300BD51B8 /* shoe_high_boot_female_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shoe_high_boot_female_4@2x.png"; sourceTree = "<group>"; };
 		EB5BE3A418DA9BB300BD51B8 /* shoe_high_boot_female_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoe_high_boot_female_0.png; sourceTree = "<group>"; };
@@ -4644,6 +4644,8 @@
 		9DE1B4831777DCD400E64600 /* Avatar */ = {
 			isa = PBXGroup;
 			children = (
+				EB37691219052D040055CE43 /* shirt_dress_for_tutu_female_3.png */,
+				EB37691319052D040055CE43 /* shirt_dress_for_tutu_female_3@2x.png */,
 				EBE4A9BA18E2C4D9008C5BCA /* shoe_high_boot_female_2@2x.png */,
 				EBE4A9BB18E2C4D9008C5BCA /* shoe_high_boot_female_2.png */,
 				EBE4A9AF18E27643008C5BCA /* shoe_high_boot_female_1@2x.png */,
@@ -5289,8 +5291,6 @@
 				AF91245D17EA9DF0002A31B0 /* shirt_dress_for_tutu_female_1@2x.png */,
 				AF91245A17EA9DF0002A31B0 /* shirt_dress_for_tutu_female_2.png */,
 				AF91245B17EA9DF0002A31B0 /* shirt_dress_for_tutu_female_2@2x.png */,
-				AF91245817EA9DF0002A31B0 /* shirt_dress_for_tutu_female_3.png */,
-				AF91245917EA9DF0002A31B0 /* shirt_dress_for_tutu_female_3@2x.png */,
 				AF91245617EA9DF0002A31B0 /* shirt_dress_for_tutu_female_4.png */,
 				AF91245717EA9DF0002A31B0 /* shirt_dress_for_tutu_female_4@2x.png */,
 				AF283BCA17E9C0F700E78F32 /* shirt_dress_special_female_0.png */,
@@ -6650,6 +6650,7 @@
 				73A1268E178CFF4F00669052 /* pant_comple_male_3@2x.png in Resources */,
 				73A1268F178CFF4F00669052 /* pant_comple_male_4.png in Resources */,
 				73A12690178CFF4F00669052 /* pant_comple_male_4@2x.png in Resources */,
+				EB37691519052D040055CE43 /* shirt_dress_for_tutu_female_3@2x.png in Resources */,
 				73A12691178CFF4F00669052 /* pant_comple_male_icon.png in Resources */,
 				73A12692178CFF4F00669052 /* pant_comple_male_icon@2x.png in Resources */,
 				73A12693178CFF4F00669052 /* pant_jean_male_0.png in Resources */,
@@ -7181,10 +7182,8 @@
 				AF283BD517E9C0F700E78F32 /* shirt_dress_special_female_0@2x.png in Resources */,
 				AF91246017EA9DF0002A31B0 /* shirt_dress_for_tutu_female_4.png in Resources */,
 				AF91246117EA9DF0002A31B0 /* shirt_dress_for_tutu_female_4@2x.png in Resources */,
-				AF91246217EA9DF0002A31B0 /* shirt_dress_for_tutu_female_3.png in Resources */,
 				AF0DA6DE180FBF0B0086847F /* avatar_male_preview_mood_3.png in Resources */,
 				AF5AC6D3185AF1B10047C04C /* head_for_hair_punk_male_2_ero_zone@2x.png in Resources */,
-				AF91246317EA9DF0002A31B0 /* shirt_dress_for_tutu_female_3@2x.png in Resources */,
 				AF91246417EA9DF0002A31B0 /* shirt_dress_for_tutu_female_2.png in Resources */,
 				AF91246517EA9DF0002A31B0 /* shirt_dress_for_tutu_female_2@2x.png in Resources */,
 				AF91246617EA9DF0002A31B0 /* shirt_dress_for_tutu_female_1.png in Resources */,
@@ -7253,6 +7252,7 @@
 				AFAF8B581844929A006AEAAC /* part_thigh_right_female_2.png in Resources */,
 				AF5AC6D0185AF1B10047C04C /* head_for_hair_punk_female_2_ero_zone.png in Resources */,
 				AF958EA817F3EA9700634B75 /* part_arm_grayed_left_female_2.png in Resources */,
+				EB37691419052D040055CE43 /* shirt_dress_for_tutu_female_3.png in Resources */,
 				AF958EA917F3EA9700634B75 /* part_arm_grayed_left_female_2@2x.png in Resources */,
 				AF958EAA17F3EA9700634B75 /* part_arm_grayed_right_female_2.png in Resources */,
 				AF958EAB17F3EA9700634B75 /* part_arm_grayed_right_female_2@2x.png in Resources */,
@@ -7722,8 +7722,8 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Lam Tran (9CFW33F97C)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lam Tran (9CFW33F97C)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: cuong kevil (73GR8E759H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: cuong kevil (73GR8E759H)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -7736,8 +7736,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = TwoSum;
-				PROVISIONING_PROFILE = "8A5CBB10-A325-47B2-80ED-E0FAA0F65273";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8A5CBB10-A325-47B2-80ED-E0FAA0F65273";
+				PROVISIONING_PROFILE = "C3D6F810-5B91-4F7F-A9AB-BB09E3B5E690";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C3D6F810-5B91-4F7F-A9AB-BB09E3B5E690";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -7752,8 +7752,8 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: RevNC, Inc. (9TTQHAB24A)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: RevNC, Inc. (9TTQHAB24A)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Twosum LLC (TZS3M5E76N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Twosum LLC (TZS3M5E76N)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
@@ -7763,8 +7763,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = TwoSum;
-				PROVISIONING_PROFILE = "E8B898C0-CD0A-48A3-AC40-3B3A0A75A533";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E8B898C0-CD0A-48A3-AC40-3B3A0A75A533";
+				PROVISIONING_PROFILE = "595BCDA7-66F3-46BC-BDBD-2F7A2AC9E85E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "595BCDA7-66F3-46BC-BDBD-2F7A2AC9E85E";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -7774,8 +7774,8 @@
 		9D081B651655FE4900B64FDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: cuong kevil (73GR8E759H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: cuong kevil (73GR8E759H)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -7790,8 +7790,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "C3D6F810-5B91-4F7F-A9AB-BB09E3B5E690";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C3D6F810-5B91-4F7F-A9AB-BB09E3B5E690";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -7801,8 +7801,8 @@
 		9D081B661655FE4900B64FDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: RevNC, Inc. (9TTQHAB24A)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: RevNC, Inc. (9TTQHAB24A)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Twosum LLC (TZS3M5E76N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Twosum LLC (TZS3M5E76N)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -7817,8 +7817,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "E8B898C0-CD0A-48A3-AC40-3B3A0A75A533";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E8B898C0-CD0A-48A3-AC40-3B3A0A75A533";
+				PROVISIONING_PROFILE = "595BCDA7-66F3-46BC-BDBD-2F7A2AC9E85E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "595BCDA7-66F3-46BC-BDBD-2F7A2AC9E85E";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

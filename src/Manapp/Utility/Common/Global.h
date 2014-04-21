@@ -75,7 +75,7 @@
 #define kIsLastItem                             46
 #define kRangeCrashOnSubCategory                2147483647
 
-#define kYearForever                            2030
+#define kYearForever                            2050
 
 #define kIndexHelpShowHomepage                  5
            
