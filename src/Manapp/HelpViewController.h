@@ -17,6 +17,8 @@
 }
 
 @property (retain, nonatomic) IBOutlet UIScrollView *scrollAvatar;
+@property (retain, nonatomic) IBOutlet UIImageView *currentImageView;
+
 
 
 

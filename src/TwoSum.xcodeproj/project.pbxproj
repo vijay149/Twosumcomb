@@ -861,7 +861,6 @@
 		9D9A0D7D16A7E12B00DA13FE /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE142616560F91005366D8 /* AFURLConnectionOperation.m */; };
 		9D9A0D7E16A7E12B00DA13FE /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE142816560F91005366D8 /* AFXMLRequestOperation.m */; };
 		9D9A0D7F16A7E12B00DA13FE /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE142A16560F91005366D8 /* UIImageView+AFNetworking.m */; };
-		9D9A0D8016A7E12E00DA13FE /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF57C6416942F61001BFCD3 /* HelpViewController.m */; };
 		9D9A0D8116A7E13100DA13FE /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66749F166459530014045C /* AddEventViewController.m */; };
 		9D9A0D8216A7E13100DA13FE /* ChangeEventDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6674A8166469720014045C /* ChangeEventDateViewController.m */; };
 		9D9A0D8316A7E13100DA13FE /* SelectionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7B4D0516899AB400F53921 /* SelectionListViewController.m */; };
@@ -1077,8 +1076,6 @@
 		9DF546EF165C8ED1007B5E20 /* UICustomProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF546EE165C8ED1007B5E20 /* UICustomProgressBar.m */; };
 		9DF546FC165CE61F007B5E20 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF546FB165CE61F007B5E20 /* UIView+Additions.m */; };
 		9DF57C5D16942B4A001BFCD3 /* ButtonControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF57C5C16942B4A001BFCD3 /* ButtonControl.m */; };
-		9DF57C6616942F61001BFCD3 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF57C6416942F61001BFCD3 /* HelpViewController.m */; };
-		9DF57C6716942F61001BFCD3 /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF57C6516942F61001BFCD3 /* HelpViewController.xib */; };
 		AF02474217EBEA7800B29EB0 /* MAChangePasswordPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF02474017EBEA7800B29EB0 /* MAChangePasswordPopupView.m */; };
 		AF02474317EBEA7800B29EB0 /* MAChangePasswordPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF02474117EBEA7800B29EB0 /* MAChangePasswordPopupView.xib */; };
 		AF02474D17EC06EB00B29EB0 /* MAChangeEmailPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF02474B17EC06EB00B29EB0 /* MAChangeEmailPopupView.m */; };
@@ -1537,6 +1534,8 @@
 		CCAD7DA31793A50A00710FCA /* shoe_boot_female_0.png in Resources */ = {isa = PBXBuildFile; fileRef = CCAD7D961793A50A00710FCA /* shoe_boot_female_0.png */; };
 		EB37691419052D040055CE43 /* shirt_dress_for_tutu_female_3.png in Resources */ = {isa = PBXBuildFile; fileRef = EB37691219052D040055CE43 /* shirt_dress_for_tutu_female_3.png */; };
 		EB37691519052D040055CE43 /* shirt_dress_for_tutu_female_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB37691319052D040055CE43 /* shirt_dress_for_tutu_female_3@2x.png */; };
+		EB37691D1905324A0055CE43 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB37691B1905324A0055CE43 /* HelpViewController.m */; };
+		EB37691E1905324A0055CE43 /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB37691C1905324A0055CE43 /* HelpViewController.xib */; };
 		EB5BE39718DA93A300BD51B8 /* shoe_high_boot_female_4.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5BE39518DA93A300BD51B8 /* shoe_high_boot_female_4.png */; };
 		EB5BE39818DA93A300BD51B8 /* shoe_high_boot_female_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5BE39618DA93A300BD51B8 /* shoe_high_boot_female_4@2x.png */; };
 		EB5BE3A618DA9BB300BD51B8 /* shoe_high_boot_female_0.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5BE3A418DA9BB300BD51B8 /* shoe_high_boot_female_0.png */; };
@@ -2778,9 +2777,6 @@
 		9DF546FB165CE61F007B5E20 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Additions.m"; path = "Utility/Category/UIView+Additions.m"; sourceTree = "<group>"; };
 		9DF57C5B16942B4A001BFCD3 /* ButtonControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonControl.h; path = Manapp/View/CustomControl/Button/ButtonControl.h; sourceTree = "<group>"; };
 		9DF57C5C16942B4A001BFCD3 /* ButtonControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonControl.m; path = Manapp/View/CustomControl/Button/ButtonControl.m; sourceTree = "<group>"; };
-		9DF57C6316942F61001BFCD3 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelpViewController.h; path = ViewController/HelpViewController.h; sourceTree = "<group>"; };
-		9DF57C6416942F61001BFCD3 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HelpViewController.m; path = ViewController/HelpViewController.m; sourceTree = "<group>"; };
-		9DF57C6516942F61001BFCD3 /* HelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HelpViewController.xib; path = ViewController/HelpViewController.xib; sourceTree = "<group>"; };
 		AF02473F17EBEA7800B29EB0 /* MAChangePasswordPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAChangePasswordPopupView.h; path = ViewController/Settings/ChangePassword/MAChangePasswordPopupView.h; sourceTree = "<group>"; };
 		AF02474017EBEA7800B29EB0 /* MAChangePasswordPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MAChangePasswordPopupView.m; path = ViewController/Settings/ChangePassword/MAChangePasswordPopupView.m; sourceTree = "<group>"; };
 		AF02474117EBEA7800B29EB0 /* MAChangePasswordPopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MAChangePasswordPopupView.xib; path = ViewController/Settings/ChangePassword/MAChangePasswordPopupView.xib; sourceTree = "<group>"; };
@@ -3282,6 +3278,9 @@
 		CCAD7D961793A50A00710FCA /* shoe_boot_female_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoe_boot_female_0.png; sourceTree = "<group>"; };
 		EB37691219052D040055CE43 /* shirt_dress_for_tutu_female_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirt_dress_for_tutu_female_3.png; sourceTree = "<group>"; };
 		EB37691319052D040055CE43 /* shirt_dress_for_tutu_female_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shirt_dress_for_tutu_female_3@2x.png"; sourceTree = "<group>"; };
+		EB37691A1905324A0055CE43 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		EB37691B1905324A0055CE43 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		EB37691C1905324A0055CE43 /* HelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
 		EB5BE39518DA93A300BD51B8 /* shoe_high_boot_female_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoe_high_boot_female_4.png; sourceTree = "<group>"; };
 		EB5BE39618DA93A300BD51B8 /* shoe_high_boot_female_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shoe_high_boot_female_4@2x.png"; sourceTree = "<group>"; };
 		EB5BE3A418DA9BB300BD51B8 /* shoe_high_boot_female_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoe_high_boot_female_0.png; sourceTree = "<group>"; };
@@ -5663,9 +5662,9 @@
 		9DF57C6216942F3B001BFCD3 /* Help */ = {
 			isa = PBXGroup;
 			children = (
-				9DF57C6316942F61001BFCD3 /* HelpViewController.h */,
-				9DF57C6416942F61001BFCD3 /* HelpViewController.m */,
-				9DF57C6516942F61001BFCD3 /* HelpViewController.xib */,
+				EB37691A1905324A0055CE43 /* HelpViewController.h */,
+				EB37691B1905324A0055CE43 /* HelpViewController.m */,
+				EB37691C1905324A0055CE43 /* HelpViewController.xib */,
 			);
 			name = Help;
 			sourceTree = "<group>";
@@ -6167,7 +6166,6 @@
 				9D6674AB166469720014045C /* ChangeEventDateViewController.xib in Resources */,
 				9D7B4D0816899AB500F53921 /* SelectionListViewController.xib in Resources */,
 				9D6EFC28168B0BDF00F452DF /* WeeklyCalendarViewController.xib in Resources */,
-				9DF57C6716942F61001BFCD3 /* HelpViewController.xib in Resources */,
 				9D2CA4AA1696BE95005AA8EB /* Localizable.strings in Resources */,
 				9DEB6ABB16A4FAF200E9A9B8 /* ClothingViewController.xib in Resources */,
 				9D5DB11616A53C330098CB18 /* bar_select.png in Resources */,
@@ -7195,6 +7193,7 @@
 				AF02475117EC2BEC00B29EB0 /* icon_shoe_tennis_male.png in Resources */,
 				AF02475217EC2BEC00B29EB0 /* icon_shoe_tennis_male@2x.png in Resources */,
 				AF82DBC917EC4C2F0011954C /* icon_beard.png in Resources */,
+				EB37691E1905324A0055CE43 /* HelpViewController.xib in Resources */,
 				AF82DBCA17EC4C2F0011954C /* icon_beard@2x.png in Resources */,
 				AF82DBCF17EC5BC00011954C /* btnCreatePartner2.png in Resources */,
 				AF82DBD017EC5BC00011954C /* btnCreatePartner2@2x.png in Resources */,
@@ -7404,6 +7403,7 @@
 				9D807C0D165A1B87003132E7 /* PartnerSetup.m in Sources */,
 				9D807C10165A1B87003132E7 /* Top.m in Sources */,
 				9D807C19165A1B87003132E7 /* PreferenceCategory.m in Sources */,
+				EB37691D1905324A0055CE43 /* HelpViewController.m in Sources */,
 				1D7705E818D1845F0085477A /* UIViewController+SlideTransitions.m in Sources */,
 				9D807C1C165A1B87003132E7 /* PartnerEroZone.m in Sources */,
 				9D807C1F165A1B88003132E7 /* HairStyle.m in Sources */,
@@ -7448,7 +7448,6 @@
 				9D6EFC27168B0BDF00F452DF /* WeeklyCalendarViewController.m in Sources */,
 				AF14F0E51803A836009E6BDA /* LocalNotificationHelper.m in Sources */,
 				9DF57C5D16942B4A001BFCD3 /* ButtonControl.m in Sources */,
-				9DF57C6616942F61001BFCD3 /* HelpViewController.m in Sources */,
 				9D2CA4A81696B8A7005AA8EB /* UIImage+Additions.m in Sources */,
 				9DF05E2C169A843D00918E1A /* PartnerBubbleTalkView.m in Sources */,
 				9DF05E36169AAC7700918E1A /* UILabel+Additions.m in Sources */,
@@ -7619,7 +7618,6 @@
 				9D9A0D7D16A7E12B00DA13FE /* AFURLConnectionOperation.m in Sources */,
 				9D9A0D7E16A7E12B00DA13FE /* AFXMLRequestOperation.m in Sources */,
 				9D9A0D7F16A7E12B00DA13FE /* UIImageView+AFNetworking.m in Sources */,
-				9D9A0D8016A7E12E00DA13FE /* HelpViewController.m in Sources */,
 				9D9A0D8116A7E13100DA13FE /* AddEventViewController.m in Sources */,
 				9D9A0D8216A7E13100DA13FE /* ChangeEventDateViewController.m in Sources */,
 				9D9A0D8316A7E13100DA13FE /* SelectionListViewController.m in Sources */,

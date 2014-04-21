@@ -7,6 +7,7 @@
 //
 
 #define kNumberOfImageHelp 8
+#define kOriginalYForCurrentImageIP5 40
 
 #import "HelpViewController.h"
 #import "MASession.h"
@@ -18,6 +19,7 @@
 @end
 
 @implementation HelpViewController
+@synthesize currentImageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +35,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     //Add Gesture Recognize
+    [self loadUI];
     
     //LeftGesture
     UISwipeGestureRecognizer *leftGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(moveLeft:)];
@@ -44,12 +47,17 @@
     [rightGesture setDirection:UISwipeGestureRecognizerDirectionRight];
     [self.view addGestureRecognizer:rightGesture];
     
-    [self loadUI];
+    
     [self loadHelpImage];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+//    CGPoint centerPoint = CGPointMake(CGRectGetMidX(self.scrollAvatar.bounds),
+//                                      CGRectGetMidY(self.scrollAvatar.bounds));
+//    [self view:self.currentImageView setCenter:centerPoint];
+    
+
     [self showMessage:@"Slide screen either way to get sum help today." title:kAppName cancelButtonTitle:@"OK"];
 }
 
@@ -109,24 +117,25 @@
         image = [UIImage imageNamed:@"help_1"];
 
     }
-       UIImageView *imageView = nil;
+
     if (IS_IPHONE_5) {
-        imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 10, self.scrollAvatar.frame.size.width, self.scrollAvatar.frame.size.height)];
-    }else{
-        imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.scrollAvatar.frame.size.width, self.scrollAvatar.frame.size.height)];
+        self.currentImageView.frame = CGRectMake(0, kOriginalYForCurrentImageIP5, SCREEN_WIDTH_PORTRAIT, SCREEN_HEIGHT_PORTRAIT);
     }
-    imageView.contentMode = UIViewContentModeScaleAspectFit;
-    imageView.image = image;
-    currentImageView = imageView;
-    [self.scrollAvatar addSubview:imageView];
-    [self.scrollAvatar setContentSize:CGSizeMake(self.scrollAvatar.frame.size.width, self.scrollAvatar.frame.size.height)];
+    self.currentImageView.image = image;
+    self.currentImageView.contentMode = UIViewContentModeScaleToFill;
+    [self.currentImageView sizeToFit];
+    self.scrollAvatar.contentSize = image.size;
+
+
     self.scrollAvatar.delegate = self;
     self.scrollAvatar.minimumZoomScale = 1.0;
     self.scrollAvatar.maximumZoomScale = 100.0;
+
 }
 #pragma mark - init functions
 -(void)loadUI{
     //add back button
+    self.view.frame = CGRectMake(0, 0, SCREEN_WIDTH_PORTRAIT, SCREEN_HEIGHT_PORTRAIT);
     self.scrollAvatar.frame = CGRectMake(0, 0, SCREEN_WIDTH_PORTRAIT, SCREEN_HEIGHT_PORTRAIT);
     [self createBackNavigationWithTitle:@"Home"];
 }
@@ -148,16 +157,39 @@
 
 -(UIView*) viewForZoomingInScrollView:(UIScrollView *)scrollView
 {
-    return currentImageView;
+    return self.currentImageView;
 }
 
-- (void)scrollViewDidZoom:(UIScrollView *)scrollView {
-    // The scroll view has zoomed, so you need to re-center the contents
-    [self centerScrollViewContents];
+- (void)scrollViewDidZoom:(UIScrollView *)sv {
+    UIView* zoomView = [sv.delegate viewForZoomingInScrollView:sv];
+    CGRect zvf = zoomView.frame;
+    if(zvf.size.width < sv.bounds.size.width)
+    {
+        zvf.origin.x = (sv.bounds.size.width - zvf.size.width) / 2.0;
+    }
+    else
+    {
+        zvf.origin.x = 0.0;
+    }
+    if(zvf.size.height < sv.bounds.size.height)
+    {
+        zvf.origin.y = (sv.bounds.size.height - zvf.size.height) / 2.0;
+    }
+    else
+    {
+        zvf.origin.y = 0.0;
+    }
+    zoomView.frame = zvf;
+    
 }
 -(void) scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale
 {
-    [self centerScrollViewContents];
+
+//    CGPoint centerPoint = CGPointMake(CGRectGetMidX(self.scrollAvatar.bounds),
+//                                      CGRectGetMidY(self.scrollAvatar.bounds));
+//    [self view:currentImageView   setCenter:centerPoint];
+
+
 }
 - (void)centerScrollViewContents {
     CGSize boundsSize = self.scrollAvatar.bounds.size;
@@ -173,9 +205,9 @@
         // Cuongnt comment - fix center image
 //        contentsFrame.origin.y = (boundsSize.height - contentsFrame.size.height) / 2.0f;
         contentsFrame.origin.y = 0;
-        if(IS_IPHONE_5){
-            contentsFrame.origin.y = 10;
-        }
+//        if(IS_IPHONE_5){
+//            contentsFrame.origin.y = 10;
+//        }
         
     } else {
         contentsFrame.origin.y = 0.0f;
@@ -220,5 +252,41 @@
         _currentPhotoIndex = nextPhotoIndex;
     }
 }
+
+
+- (void)view:(UIView*)view setCenter:(CGPoint)centerPoint
+{
+    CGRect vf = view.frame;
+    CGPoint co = self.scrollAvatar.contentOffset;
+    
+    CGFloat x = centerPoint.x - vf.size.width / 2.0;
+    CGFloat y = centerPoint.y - vf.size.height / 2.0;
+    
+    if(x < 0)
+    {
+        co.x = -x;
+        vf.origin.x = 0.0;
+    }
+    else
+    {
+        vf.origin.x = x;
+    }
+    if(y < 0)
+    {
+        co.y = -y;
+        vf.origin.y = 0.0;
+    }
+    else
+    {
+        vf.origin.y = y;
+    }
+    
+    view.frame = vf;
+    if (IS_IPHONE_5) {
+        co.y = -50;
+    }
+    self.scrollAvatar.contentOffset = co;
+}
+
 
 @end
