@@ -143,7 +143,7 @@ static const NSString * MAUsefulBits = @"Useful Bits";
     nameLabel.backgroundColor = [UIColor clearColor];
     nameLabel.textColor = [UIColor whiteColor];
     //    nameLabel.font = [UIFont boldSystemFontOfSize:10.5f];
-    nameLabel.font = [UIFont fontWithName:kAppFont size:11];
+    nameLabel.font = [UIFont fontWithName:kAppFont size:10];
     titleHeight = 10;
     currentHeight += titleHeight;
     
@@ -152,7 +152,7 @@ static const NSString * MAUsefulBits = @"Useful Bits";
         
         [nameLabel changeSizeToMatchText:nameText allowWidthChange:NO];
         nameLabel.text = nameText;
-        nameLabel.font = [UIFont fontWithName:kAppFont size:11];
+        nameLabel.font = [UIFont fontWithName:kAppFont size:10];
         [nameLabel setHeight:nameLabel.frame.size.height];
     }
     
@@ -191,14 +191,14 @@ static const NSString * MAUsefulBits = @"Useful Bits";
                 }
 
                 CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
-                CGSize size = [eventItemText sizeWithFont:[UIFont systemFontOfSize:11] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
+                CGSize size = [eventItemText sizeWithFont:[UIFont systemFontOfSize:10] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
                 SoLabel *label = [[SoLabel alloc]initWithFrame:CGRectMake(5, 5, MANAPP_PARTNER_BUBBLE_TALK_WIDTH - 5, MAX(size.height, 110))];
                 
                 label.text = eventItemText;
                 [label setLineBreakMode:NSLineBreakByWordWrapping];
                 label.backgroundColor = [UIColor clearColor];
                 label.textColor = [UIColor whiteColor];
-                label.font = [UIFont fontWithName:kAppFont size:11];
+                label.font = [UIFont fontWithName:kAppFont size:10];
                 [label changeSizeToMatchText:eventItemText allowWidthChange:NO];
                 [label setNumberOfLines:0];
                 [label sizeToFit];
@@ -230,14 +230,14 @@ static const NSString * MAUsefulBits = @"Useful Bits";
                 
                 NSLog(@"EVENT NOTIFICATION:EVENT TEXT: %@", eventItemText);
                 CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
-                CGSize size = [eventItemText sizeWithFont:[UIFont systemFontOfSize:11] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
+                CGSize size = [eventItemText sizeWithFont:[UIFont systemFontOfSize:10] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
                 SoLabel *label = [[SoLabel alloc]initWithFrame:CGRectMake(5, 5, MANAPP_PARTNER_BUBBLE_TALK_WIDTH - 5, MAX(size.height, 110))];
                 
                 label.text = eventItemText;
                 [label setLineBreakMode:NSLineBreakByWordWrapping];
                 label.backgroundColor = [UIColor clearColor];
                 label.textColor = [UIColor whiteColor];
-                label.font = [UIFont fontWithName:kAppFont size:11];
+                label.font = [UIFont fontWithName:kAppFont size:10];
                 [label changeSizeToMatchText:eventItemText allowWidthChange:NO];
                 [label setNumberOfLines:0];
                 [label sizeToFit];
@@ -261,7 +261,7 @@ static const NSString * MAUsefulBits = @"Useful Bits";
         if (contentForMessage && ![Util isNullOrNilObject:contentForMessage] && [Util trimSpace:contentForMessage].length > 0) {
             NSString *eventItemText = [NSString stringWithFormat:@"%@:\r\n\n%@", MAUsefulBits ,contentForMessage];
             CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
-            CGSize size = [eventItemText sizeWithFont:[UIFont systemFontOfSize:11] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
+            CGSize size = [eventItemText sizeWithFont:[UIFont systemFontOfSize:10] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
             SoLabel *label = [[SoLabel alloc]initWithFrame:CGRectMake(5, 5, MANAPP_PARTNER_BUBBLE_TALK_WIDTH - 5, MAX(size.height, 110))];
             
             
@@ -271,7 +271,7 @@ static const NSString * MAUsefulBits = @"Useful Bits";
             [label setLineBreakMode:NSLineBreakByWordWrapping];
             label.backgroundColor = [UIColor clearColor];
             label.textColor = [UIColor whiteColor];
-            label.font = [UIFont fontWithName:kAppFont size:11];
+            label.font = [UIFont fontWithName:kAppFont size:10];
             [label changeSizeToMatchText:eventItemText allowWidthChange:NO];
             [label setNumberOfLines:0];
             [label sizeToFit];
@@ -298,7 +298,7 @@ static const NSString * MAUsefulBits = @"Useful Bits";
                         DLogInfo(@"is moodddddddddddddd");
                     }
                     CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
-                    CGSize size = [eventItemText sizeWithFont:[UIFont systemFontOfSize:11] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
+                    CGSize size = [eventItemText sizeWithFont:[UIFont systemFontOfSize:10] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
                     SoLabel *label = [[SoLabel alloc]initWithFrame:CGRectMake(5, 5, MANAPP_PARTNER_BUBBLE_TALK_WIDTH - 5, MAX(size.height, 110))];
                     
                     NSLog(@"EVENT MESSAGE:EVENT TEXT: %@", eventItemText);
@@ -307,7 +307,7 @@ static const NSString * MAUsefulBits = @"Useful Bits";
                     [label setLineBreakMode:NSLineBreakByWordWrapping];
                     label.backgroundColor = [UIColor clearColor];
                     label.textColor = [UIColor whiteColor];
-                    label.font = [UIFont fontWithName:kAppFont size:11];
+                    label.font = [UIFont fontWithName:kAppFont size:10];
                     [label changeSizeToMatchText:eventItemText allowWidthChange:NO];
                     
                     NSLog(@"lbl eventItem %@",eventItemText);
