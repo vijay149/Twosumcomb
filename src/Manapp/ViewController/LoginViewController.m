@@ -548,7 +548,7 @@
 //                        [self goToHomePage];
                     } fail:^(NSError *error) {
                         [self hideWaitingHud];
-//                        [self showMessage:[NSString stringWithFormat:@"Error : %@",error.localizedDescription]];
+                        [self showMessage:[NSString stringWithFormat:@"Error : %@",error.localizedDescription]];
 //                        [self goToHomePage];
                     }];
                 } completion:^{

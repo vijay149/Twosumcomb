@@ -3,12 +3,12 @@
 	<data>
 		<int key="IBDocument.SystemTarget">1280</int>
 		<string key="IBDocument.SystemVersion">12F45</string>
-		<string key="IBDocument.InterfaceBuilderVersion">4514</string>
+		<string key="IBDocument.InterfaceBuilderVersion">5053</string>
 		<string key="IBDocument.AppKitVersion">1187.40</string>
 		<string key="IBDocument.HIToolboxVersion">626.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">3746</string>
+			<string key="NS.object.0">3733</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBProxyObject</string>
@@ -1014,6 +1014,6 @@
 			<string key="bubbleTalkArrow2.png">{12, 12}</string>
 			<string key="splashHomeBgView.png">{320, 568}</string>
 		</dictionary>
-		<string key="IBCocoaTouchPluginVersion">3746</string>
+		<string key="IBCocoaTouchPluginVersion">3733</string>
 	</data>
 </archive>

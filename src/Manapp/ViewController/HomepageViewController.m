@@ -1014,7 +1014,8 @@
         if(buttonIndex == 0){
             if([MASession sharedSession].userID > 0){
                 [self showWaitingHud];
-                [[MANetworkHelper sharedHelper] requestVerifyEmailForUserId:[NSString stringWithFormat:@"%d",[MASession sharedSession].userID] success:^(NSDictionary *response) {
+                int userId =  [[[MASession sharedSession] currentPartner].userID intValue];
+                [[MANetworkHelper sharedHelper] requestVerifyEmailForUserId:[NSString stringWithFormat:@"%d", userId] success:^(NSDictionary *response) {
                     NSString *responseMsg = [[MANetworkHelper sharedHelper] parseRequestVerifyEmailResult:response];
                     if(!responseMsg){
                         [self showMessage:@"The email was sent successfully, please check your email!"];

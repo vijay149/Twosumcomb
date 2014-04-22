@@ -119,7 +119,7 @@
     }
 
     if (IS_IPHONE_5) {
-        self.currentImageView.frame = CGRectMake(0, kOriginalYForCurrentImageIP5, SCREEN_WIDTH_PORTRAIT, SCREEN_HEIGHT_PORTRAIT);
+        self.currentImageView.frame = CGRectMake(0, kOriginalYForCurrentImageIP5, image.size.width, image.size.height);
     }
     self.currentImageView.image = image;
     self.currentImageView.contentMode = UIViewContentModeScaleToFill;
