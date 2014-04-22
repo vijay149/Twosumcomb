@@ -116,7 +116,7 @@
         image = [UIImage imageNamed:[NSString stringWithFormat:@"help_%d", _currentPhotoIndex]];
     }else{
         _currentPhotoIndex = 2;
-         image = [UIImage imageNamed:[NSString stringWithFormat:@"help_%d", _currentPhotoIndex]];
+        image = [UIImage imageNamed:[NSString stringWithFormat:@"help_%d", _currentPhotoIndex]];
     }
 
     if (IS_IPHONE_5) {
