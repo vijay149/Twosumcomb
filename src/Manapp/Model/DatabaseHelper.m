@@ -1808,11 +1808,11 @@
                 return events;
             }
             partnerEvent.eventID = [NSString generateGUID];
-            partnerEvent.eventName = [NSString stringWithFormat:@"The day you first met %@",partner.name];
+            partnerEvent.eventName = [NSString stringWithFormat:@"First date commemorated %@",partner.name];
             partnerEvent.eventTime = startTime;
             partnerEvent.eventEndTime = [startTime dateByAddDays:1];
             partnerEvent.finishTime = [startTime dateByAddDays:1];
-            partnerEvent.note = [NSString stringWithFormat:@"The day you first met %@",partner.name];;
+            partnerEvent.note = [NSString stringWithFormat:@"First date commemorated %@",partner.name];;
             partnerEvent.partner = partner;
             partnerEvent.recurrence = nil;
             partnerEvent.reminder = nil;
@@ -4465,16 +4465,36 @@
         [self.managedObjectContext deleteObject:partnerMessage];
     }
     [self saveContext];
+    //Cuongnt comment -- Get mood Value Today
+    // get PartnerMood for partner today:
+    PartnerMood *partnerMood = [[DatabaseHelper sharedHelper]partnerMoodWithPartner:partner date:[NSDate date]];
     
-    CGFloat moodValue = [MoodHelper calculateMoodAtDate:[NSDate date] forPartner:partner];
-    if(moodValue == MA_MOOD_UNAVAILABLE_VALUE){
-        moodValue = 0;
+//    CGFloat moodValue = [MoodHelper calculateMoodAtDate:[NSDate date] forPartner:partner]; //return wrong mood value
+//    if(moodValue == MA_MOOD_UNAVAILABLE_VALUE){
+//        moodValue = 0;
+//    }
+    
+    // Cuongnt Add More
+
+    CGFloat moodValue = [partnerMood.moodValue floatValue];
+    if (!moodValue || moodValue == MA_MOOD_UNAVAILABLE_VALUE) {
+         moodValue = 0;
     }
+    //--------------- end -------------------
     
+    //1 mood message -->> create 10 Mood Message
+    for (int i =0 ; i< 10; i++) {
+        Message *moodTodayMsg = [self getMessageForType:MANAPP_MESSAGE_TYPE_MOOD partner:partner mood:moodValue];
+        if (moodTodayMsg) {
+            [self addMessage:moodTodayMsg toPartner:partner];
+        }
+        
+    }
     //1 mood message
-    Message *messageMood = [self getMessageForType:MANAPP_MESSAGE_TYPE_MOOD partner:partner mood:moodValue];
-    [self addMessage:messageMood toPartner:partner];
-    
+//    Message *messageMood = [self getMessageForType:MANAPP_MESSAGE_TYPE_MOOD partner:partner mood:moodValue];
+//    [self addMessage:messageMood toPartner:partner];
+
+    //1 mood message Future
     Message *messageMoodFuture = [self getMessageForType:MANAPP_MESSAGE_TYPE_MOOD_FUTURE partner:partner mood:moodValue];
     [self addMessage:messageMoodFuture toPartner:partner];
     
