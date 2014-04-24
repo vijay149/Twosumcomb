@@ -49,7 +49,7 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
-#define kRepeatYear 50
+#define kRepeatYear 100
 
 +(id) sharedHelper{
     static DatabaseHelper* databaseManager = nil;
@@ -4481,18 +4481,18 @@
          moodValue = 0;
     }
     //--------------- end -------------------
-    
-    //1 mood message -->> create 10 Mood Message
-    for (int i =0 ; i< 10; i++) {
-        Message *moodTodayMsg = [self getMessageForType:MANAPP_MESSAGE_TYPE_MOOD partner:partner mood:moodValue];
-        if (moodTodayMsg) {
-            [self addMessage:moodTodayMsg toPartner:partner];
-        }
-        
-    }
+    ///----------------- remove after test successful ---------------------
+//    //1 mood message -->> create 10 Mood Message
+//    for (int i =0 ; i< 15; i++) {
+//        Message *moodTodayMsg = [self getMessageForType:MANAPP_MESSAGE_TYPE_MOOD partner:partner mood:moodValue];
+//        if (moodTodayMsg) {
+//            [self addMessage:moodTodayMsg toPartner:partner];
+//        }
+//        
+//    }
     //1 mood message
-//    Message *messageMood = [self getMessageForType:MANAPP_MESSAGE_TYPE_MOOD partner:partner mood:moodValue];
-//    [self addMessage:messageMood toPartner:partner];
+    Message *messageMood = [self getMessageForType:MANAPP_MESSAGE_TYPE_MOOD partner:partner mood:moodValue];
+    [self addMessage:messageMood toPartner:partner];
 
     //1 mood message Future
     Message *messageMoodFuture = [self getMessageForType:MANAPP_MESSAGE_TYPE_MOOD_FUTURE partner:partner mood:moodValue];
