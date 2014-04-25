@@ -146,16 +146,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-//    if (iOS7OrLater) {
-//        NSString *objCheck = [Util valueForKey:kIsCreatedPartner];
-//        if (!objCheck || ![objCheck isEqualToString:@"YES"]) {
-//            self.splashView.frame = CGRectMake(0, 0, SCREEN_WIDTH_PORTRAIT, SCREEN_HEIGHT_PORTRAIT);
-//            [self.view addSubview:self.splashView];
-//        }
-//        
-//    }
-
     
     //Setting picker
     [self loadSettingView];
@@ -171,35 +161,11 @@
     [self loadCurrentPose];
     [self realTimeUpdateMessage];
 
-    /**
-     *  use splashView
-     
-     *
-     *  @param 0                      <#0 description#>
-     *  @param 0                      <#0 description#>
-     *  @param SCREEN_WIDTH_PORTRAIT  <#SCREEN_WIDTH_PORTRAIT description#>
-     *  @param SCREEN_HEIGHT_PORTRAIT <#SCREEN_HEIGHT_PORTRAIT description#>
-     *
-     *  @return <#return value description#>
-     */
     
 }
 
 - (void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-//    if (iOS7OrLater) {
-//        if (self.firstTime) {
-////            [self loadPartner];
-//            self.firstTime = NO;
-//            if ([MASession sharedSession].currentPartner == nil) {
-////                [self gotoCreatePartnerPage];
-//            } else {
-//                [self loadAvatar];
-//            }
-////            [self.splashView removeFromSuperview];
-//        }
-//    }
-
 }
 
 
@@ -1014,7 +980,8 @@
         if(buttonIndex == 0){
             if([MASession sharedSession].userID > 0){
                 [self showWaitingHud];
-                [[MANetworkHelper sharedHelper] requestVerifyEmailForUserId:[NSString stringWithFormat:@"%d",[MASession sharedSession].userID] success:^(NSDictionary *response) {
+                int userId =  [[[MASession sharedSession] currentPartner].userID intValue];
+                [[MANetworkHelper sharedHelper] requestVerifyEmailForUserId:[NSString stringWithFormat:@"%d", userId] success:^(NSDictionary *response) {
                     NSString *responseMsg = [[MANetworkHelper sharedHelper] parseRequestVerifyEmailResult:response];
                     if(!responseMsg){
                         [self showMessage:@"The email was sent successfully, please check your email!"];

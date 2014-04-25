@@ -40,11 +40,13 @@
     //LeftGesture
     UISwipeGestureRecognizer *leftGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(moveLeft:)];
     [leftGesture setDirection:UISwipeGestureRecognizerDirectionLeft];
+//    [self.currentImageView addGestureRecognizer:leftGesture];
     [self.view addGestureRecognizer:leftGesture];
     
     //Right Gesture
     UISwipeGestureRecognizer *rightGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(moveRight:)];
     [rightGesture setDirection:UISwipeGestureRecognizerDirectionRight];
+//    [self.currentImageView addGestureRecognizer:rightGesture];
     [self.view addGestureRecognizer:rightGesture];
     
     
@@ -113,13 +115,12 @@
         _currentPhotoIndex = kIndexHelpShowHomepage;
         image = [UIImage imageNamed:[NSString stringWithFormat:@"help_%d", _currentPhotoIndex]];
     }else{
-        _currentPhotoIndex = 1;
-        image = [UIImage imageNamed:@"help_1"];
-
+        _currentPhotoIndex = 2;
+        image = [UIImage imageNamed:[NSString stringWithFormat:@"help_%d", _currentPhotoIndex]];
     }
 
     if (IS_IPHONE_5) {
-        self.currentImageView.frame = CGRectMake(0, kOriginalYForCurrentImageIP5, SCREEN_WIDTH_PORTRAIT, SCREEN_HEIGHT_PORTRAIT);
+        self.currentImageView.frame = CGRectMake(0, kOriginalYForCurrentImageIP5, image.size.width, image.size.height);
     }
     self.currentImageView.image = image;
     self.currentImageView.contentMode = UIViewContentModeScaleToFill;
