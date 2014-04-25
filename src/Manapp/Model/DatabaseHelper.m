@@ -1808,11 +1808,12 @@
                 return events;
             }
             partnerEvent.eventID = [NSString generateGUID];
-            partnerEvent.eventName = [NSString stringWithFormat:@"First date commemorated %@",partner.name];
+//            partnerEvent.eventName = [NSString stringWithFormat:@"First date commemorated %@",partner.name];
+            partnerEvent.eventName = [NSString stringWithFormat:@"First date commemorated"];
             partnerEvent.eventTime = startTime;
             partnerEvent.eventEndTime = [startTime dateByAddDays:1];
             partnerEvent.finishTime = [startTime dateByAddDays:1];
-            partnerEvent.note = [NSString stringWithFormat:@"First date commemorated %@",partner.name];;
+            partnerEvent.note = [NSString stringWithFormat:@"First date commemorated"];
             partnerEvent.partner = partner;
             partnerEvent.recurrence = nil;
             partnerEvent.reminder = nil;
