@@ -844,6 +844,9 @@
 
 
 - (void) isShirtDressAndPantTennisOrTuTuWithPartner:(Partner *)partner withPose:(NSInteger) pose {
+    if (partner.sex.integerValue == 1) {
+        return;
+    }
     if (self.itemPantPreview && self.itemPantPreview.imageURLFormat && self.itemShirtPreview && self.itemShirtPreview.imageURLFormat) {
         NSLog(@"self.itemPantPreview.imageURLFormat %@",self.itemPantPreview.imageURLFormat);
         NSLog(@"self.itemShirtPreview.imageURLFormat %@",self.itemShirtPreview.imageURLFormat);
