@@ -92,7 +92,6 @@
 		73388E12178E558600B957D2 /* hair_punk_male_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73388DDB178E558600B957D2 /* hair_punk_male_3@2x.png */; };
 		73388E13178E558600B957D2 /* hair_shorthair_female_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 73388DDC178E558600B957D2 /* hair_shorthair_female_3.png */; };
 		73388E14178E558600B957D2 /* hair_shorthair_female_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73388DDD178E558600B957D2 /* hair_shorthair_female_3@2x.png */; };
-		73388E19178E558600B957D2 /* pant_skirt_tennis_female_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 73388DE2178E558600B957D2 /* pant_skirt_tennis_female_02.png */; };
 		73388E1A178E558600B957D2 /* pant_skirt_tennis_female_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 73388DE3178E558600B957D2 /* pant_skirt_tennis_female_4.png */; };
 		73388E1B178E558600B957D2 /* pant_skirt_tennis_female_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73388DE4178E558600B957D2 /* pant_skirt_tennis_female_4@2x.png */; };
 		73388E1C178E558600B957D2 /* tie_male_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 73388DE5178E558600B957D2 /* tie_male_2.png */; };
@@ -1726,7 +1725,6 @@
 		73388DDB178E558600B957D2 /* hair_punk_male_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hair_punk_male_3@2x.png"; sourceTree = "<group>"; };
 		73388DDC178E558600B957D2 /* hair_shorthair_female_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hair_shorthair_female_3.png; sourceTree = "<group>"; };
 		73388DDD178E558600B957D2 /* hair_shorthair_female_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hair_shorthair_female_3@2x.png"; sourceTree = "<group>"; };
-		73388DE2178E558600B957D2 /* pant_skirt_tennis_female_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pant_skirt_tennis_female_02.png; sourceTree = "<group>"; };
 		73388DE3178E558600B957D2 /* pant_skirt_tennis_female_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pant_skirt_tennis_female_4.png; sourceTree = "<group>"; };
 		73388DE4178E558600B957D2 /* pant_skirt_tennis_female_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pant_skirt_tennis_female_4@2x.png"; sourceTree = "<group>"; };
 		73388DE5178E558600B957D2 /* tie_male_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tie_male_2.png; sourceTree = "<group>"; };
@@ -5074,7 +5072,6 @@
 				732DEDE6177965C500A18A2B /* pant_skirt_female_icon.png */,
 				AF31527017B4B52200DB6D57 /* pant_skirt_female_icon@2x.png */,
 				73A125AE178CFF4E00669052 /* pant_skirt_tennis_female_0.png */,
-				73388DE2178E558600B957D2 /* pant_skirt_tennis_female_02.png */,
 				73A125AF178CFF4E00669052 /* pant_skirt_tennis_female_0@2x.png */,
 				73A125B0178CFF4E00669052 /* pant_skirt_tennis_female_1.png */,
 				73A125B1178CFF4E00669052 /* pant_skirt_tennis_female_1@2x.png */,
@@ -6891,7 +6888,6 @@
 				73388E12178E558600B957D2 /* hair_punk_male_3@2x.png in Resources */,
 				73388E13178E558600B957D2 /* hair_shorthair_female_3.png in Resources */,
 				73388E14178E558600B957D2 /* hair_shorthair_female_3@2x.png in Resources */,
-				73388E19178E558600B957D2 /* pant_skirt_tennis_female_02.png in Resources */,
 				AF3EE006184DDB4F00F895ED /* part_waist_male_1@2x.png in Resources */,
 				73388E1A178E558600B957D2 /* pant_skirt_tennis_female_4.png in Resources */,
 				73388E1B178E558600B957D2 /* pant_skirt_tennis_female_4@2x.png in Resources */,
