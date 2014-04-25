@@ -168,6 +168,21 @@
     [super viewDidAppear:animated];
 }
 
+- (void)refreshAvatar
+{
+    [self.customAvatarView removeFromSuperview];
+    self.customAvatarView = nil;
+    
+    self.customAvatarView = (CustomAvatarView *)[Util getView:[CustomAvatarView class]];
+    self.customAvatarView.frame = CGRectMake(0, 0, self.viewAvatar.frame.size.width, self.viewAvatar.frame.size.height);
+    [self.viewAvatar addSubview:self.customAvatarView];
+    [self.customAvatarView loadAvatarForPartner:[MASession sharedSession].currentPartner];
+    [self loadAvatar];
+    [self.viewAvatar bringSubviewToFront:self.btnMood];
+    
+
+}
+
 
 -(void) viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -176,7 +191,7 @@
     
     [self loadSettingView];
     [self loadPartnerMood];
-    [self loadAvatar];
+//    [self loadAvatar];
     [self loadProgressBar];
     [self reloadBubbleTalk];
     
@@ -187,6 +202,8 @@
     ///!!!:generateAvatarPreviewMoodDefault
     //    [self generateAvatarPreviewMoodDefault:^(BOOL blockResult)  {}];
     // do something you want to measure
+    [self refreshAvatar];
+
 }
 
 
