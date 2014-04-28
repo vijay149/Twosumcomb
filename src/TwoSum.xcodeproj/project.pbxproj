@@ -7856,7 +7856,8 @@
 		9D301AFF1688422200C7136F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Twosum LLC (TZS3M5E76N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Twosum LLC (TZS3M5E76N)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ManappUnitTest/Library\"",
@@ -7878,6 +7879,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "71FD5316-8D3A-488C-9637-DA357176D456";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71FD5316-8D3A-488C-9637-DA357176D456";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -7885,7 +7888,8 @@
 		9D301B001688422200C7136F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Twosum LLC (TZS3M5E76N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Twosum LLC (TZS3M5E76N)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ManappUnitTest/Library\"",
@@ -7907,6 +7911,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "71FD5316-8D3A-488C-9637-DA357176D456";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "71FD5316-8D3A-488C-9637-DA357176D456";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
