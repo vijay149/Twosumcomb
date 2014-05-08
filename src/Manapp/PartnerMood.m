@@ -1,9 +1,9 @@
 //
 //  PartnerMood.m
-//  Manapp
+//  TwoSum
 //
-//  Created by Demigod on 12/03/2013.
-//  Copyright (c) 2013 Seta. All rights reserved.
+//  Created by NguyenHuong on 5/8/14.
+//  Copyright (c) 2014 Seta. All rights reserved.
 //
 
 #import "PartnerMood.h"
@@ -13,9 +13,10 @@
 @implementation PartnerMood
 
 @dynamic addedTime;
+@dynamic isSample;
 @dynamic moodID;
 @dynamic moodValue;
-@dynamic isSample;
+@dynamic isUserInput;
 @dynamic partner;
 
 @end

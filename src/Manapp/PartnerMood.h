@@ -1,9 +1,9 @@
 //
 //  PartnerMood.h
-//  Manapp
+//  TwoSum
 //
-//  Created by Demigod on 12/03/2013.
-//  Copyright (c) 2013 Seta. All rights reserved.
+//  Created by NguyenHuong on 5/8/14.
+//  Copyright (c) 2014 Seta. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,9 +14,10 @@
 @interface PartnerMood : NSManagedObject
 
 @property (nonatomic, retain) NSDate * addedTime;
+@property (nonatomic, retain) NSNumber * isSample;
 @property (nonatomic, retain) NSString * moodID;
 @property (nonatomic, retain) NSNumber * moodValue;
-@property (nonatomic, retain) NSNumber * isSample;
+@property (nonatomic, retain) NSNumber * isUserInput;
 @property (nonatomic, retain) Partner *partner;
 
 @end
