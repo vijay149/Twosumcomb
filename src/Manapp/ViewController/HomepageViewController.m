@@ -409,6 +409,8 @@
     [self.settingItems addObject:MANAPP_SETTING_MENU_ITEM_CHANGE_EMAIL];
     [self.settingItems addObject:MANAPP_SETTING_MENU_ITEM_LOGOUT];
     [self.pickerSetting reloadAllComponents];
+    [self.pickerSetting setBackgroundColor:[UIColor whiteColor]];
+
     
     //setting UI
     // COMMENT: actionset for setting picker
