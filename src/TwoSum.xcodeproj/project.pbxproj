@@ -7770,7 +7770,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: cuong kevil (73GR8E759H)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: cuong kevil (73GR8E759H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hieu Bui Thanh (CARGWL85SC)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -7786,7 +7786,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0E11D00E-0706-41EE-BAFA-A13C9DA28C50";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0E11D00E-0706-41EE-BAFA-A13C9DA28C50";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4188A319-DF05-43A7-B440-2A0EE1C901A9";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
