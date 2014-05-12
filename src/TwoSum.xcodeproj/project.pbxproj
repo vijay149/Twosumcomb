@@ -21,6 +21,7 @@
 		386EF73518B4976800E86F32 /* help_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 386EF72B18B4976800E86F32 /* help_8@2x.png */; };
 		3879C1CE18ADC61600ED1AF1 /* bgCalendarWeekTileSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3879C1CC18ADC61600ED1AF1 /* bgCalendarWeekTileSelected.png */; };
 		3879C1CF18ADC61600ED1AF1 /* bgCalendarWeekTileSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3879C1CD18ADC61600ED1AF1 /* bgCalendarWeekTileSelected@2x.png */; };
+		64380817191B374A0078FAFB /* PartnerMood.m in Sources */ = {isa = PBXBuildFile; fileRef = 64380816191B374A0078FAFB /* PartnerMood.m */; };
 		732DEDDE17793D1100A18A2B /* glass_idiot_female_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 732DEDDA17793D1100A18A2B /* glass_idiot_female_icon.png */; };
 		732DEDDF17793D1100A18A2B /* glass_round_female_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 732DEDDB17793D1100A18A2B /* glass_round_female_icon.png */; };
 		732DEDE017793D1100A18A2B /* glass_snorkle_female_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 732DEDDC17793D1100A18A2B /* glass_snorkle_female_icon.png */; };
@@ -598,7 +599,6 @@
 		9D08785C173B77CE0045A218 /* underware4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D087853173B77CE0045A218 /* underware4.png */; };
 		9D08785D173B77CE0045A218 /* underware5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D087854173B77CE0045A218 /* underware5.png */; };
 		9D0B67D1171E4B94008D1A03 /* underware1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D0B67CF171E4B94008D1A03 /* underware1.png */; };
-		9D0D2AC816EF06F400B45862 /* PartnerMood.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0D2AC716EF06F400B45862 /* PartnerMood.m */; };
 		9D0E6F3F16BCBBBD001C057B /* btnBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E6F2D16BCBBBD001C057B /* btnBack.png */; };
 		9D0E6F4016BCBBBD001C057B /* btnBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E6F2E16BCBBBD001C057B /* btnBack@2x.png */; };
 		9D0E6F4116BCBBBD001C057B /* btnBreakUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E6F2F16BCBBBD001C057B /* btnBreakUp.png */; };
@@ -1653,6 +1653,9 @@
 		386EF72B18B4976800E86F32 /* help_8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help_8@2x.png"; sourceTree = "<group>"; };
 		3879C1CC18ADC61600ED1AF1 /* bgCalendarWeekTileSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgCalendarWeekTileSelected.png; path = Resource/Image/bgCalendarWeekTileSelected.png; sourceTree = "<group>"; };
 		3879C1CD18ADC61600ED1AF1 /* bgCalendarWeekTileSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bgCalendarWeekTileSelected@2x.png"; path = "Resource/Image/bgCalendarWeekTileSelected@2x.png"; sourceTree = "<group>"; };
+		64380814191B370C0078FAFB /* Manappv 12.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Manappv 12.xcdatamodel"; sourceTree = "<group>"; };
+		64380815191B374A0078FAFB /* PartnerMood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartnerMood.h; sourceTree = "<group>"; };
+		64380816191B374A0078FAFB /* PartnerMood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartnerMood.m; sourceTree = "<group>"; };
 		7317A9D017A667C900C830A9 /* Manappv 9.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Manappv 9.xcdatamodel"; sourceTree = "<group>"; };
 		732DEDDA17793D1100A18A2B /* glass_idiot_female_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glass_idiot_female_icon.png; sourceTree = "<group>"; };
 		732DEDDB17793D1100A18A2B /* glass_round_female_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glass_round_female_icon.png; sourceTree = "<group>"; };
@@ -2243,8 +2246,6 @@
 		9D087854173B77CE0045A218 /* underware5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = underware5.png; sourceTree = "<group>"; };
 		9D0B67CF171E4B94008D1A03 /* underware1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = underware1.png; sourceTree = "<group>"; };
 		9D0D2AC416EF06AD00B45862 /* Manappv 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Manappv 3.xcdatamodel"; sourceTree = "<group>"; };
-		9D0D2AC616EF06F400B45862 /* PartnerMood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PartnerMood.h; path = Model/ManagedObjects/PartnerMood.h; sourceTree = "<group>"; };
-		9D0D2AC716EF06F400B45862 /* PartnerMood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PartnerMood.m; path = Model/ManagedObjects/PartnerMood.m; sourceTree = "<group>"; };
 		9D0E6F2D16BCBBBD001C057B /* btnBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnBack.png; sourceTree = "<group>"; };
 		9D0E6F2E16BCBBBD001C057B /* btnBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnBack@2x.png"; sourceTree = "<group>"; };
 		9D0E6F2F16BCBBBD001C057B /* btnBreakUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnBreakUp.png; sourceTree = "<group>"; };
@@ -4165,8 +4166,6 @@
 				9D807C3C165A1B89003132E7 /* PartnerMeasurementItem.m */,
 				734819DD17AF88BB00E17582 /* PartnerMessages.h */,
 				734819DE17AF88BB00E17582 /* PartnerMessages.m */,
-				9D0D2AC616EF06F400B45862 /* PartnerMood.h */,
-				9D0D2AC716EF06F400B45862 /* PartnerMood.m */,
 				9D807C0B165A1B87003132E7 /* PartnerSetup.h */,
 				9D807C0C165A1B87003132E7 /* PartnerSetup.m */,
 				9D807C17165A1B87003132E7 /* PreferenceCategory.h */,
@@ -4179,6 +4178,8 @@
 				9D807C48165A1B8A003132E7 /* Skin.m */,
 				9D807C0E165A1B87003132E7 /* Top.h */,
 				9D807C0F165A1B87003132E7 /* Top.m */,
+				64380815191B374A0078FAFB /* PartnerMood.h */,
+				64380816191B374A0078FAFB /* PartnerMood.m */,
 			);
 			name = ManagedObjects;
 			sourceTree = "<group>";
@@ -7346,6 +7347,7 @@
 			files = (
 				1DECC9F318CEE45D00807449 /* MADataLoader.m in Sources */,
 				9D081B3E1655FE4900B64FDF /* main.m in Sources */,
+				64380817191B374A0078FAFB /* PartnerMood.m in Sources */,
 				9D081B421655FE4900B64FDF /* MAAppDelegate.m in Sources */,
 				9DBE142B16560F91005366D8 /* AFHTTPClient.m in Sources */,
 				9DBE142C16560F91005366D8 /* AFHTTPRequestOperation.m in Sources */,
@@ -7486,7 +7488,6 @@
 				AF2BC5E51875769D00B2B227 /* Event.m in Sources */,
 				9DD25BF716E87ED500DAFDD0 /* Manappv1.xcdatamodeld in Sources */,
 				AF44F29517FA77500013CE87 /* RATreeView+Private.m in Sources */,
-				9D0D2AC816EF06F400B45862 /* PartnerMood.m in Sources */,
 				AF064C521869475000D49069 /* DListNode.m in Sources */,
 				9D13F5EF16F01DCA00EA004C /* MoodHelper.m in Sources */,
 				9D13F5F316F066A800EA004C /* PartnerMoodView.m in Sources */,
@@ -7963,6 +7964,7 @@
 			isa = XCVersionGroup;
 			children = (
 				EB93882818A4BB7400E9BF68 /* Manappv 11.xcdatamodel */,
+				64380814191B370C0078FAFB /* Manappv 12.xcdatamodel */,
 				7348197817AF4C2D00E17582 /* Manappv 10.xcdatamodel */,
 				7317A9D017A667C900C830A9 /* Manappv 9.xcdatamodel */,
 				73FC18FB17A12D1100C5F0CE /* Manappv 8.xcdatamodel */,
@@ -7974,7 +7976,7 @@
 				9DD25BF516E87ED500DAFDD0 /* Manappv 2.xcdatamodel */,
 				9DD25BF616E87ED500DAFDD0 /* Manappv1.xcdatamodel */,
 			);
-			currentVersion = EB93882818A4BB7400E9BF68 /* Manappv 11.xcdatamodel */;
+			currentVersion = 64380814191B370C0078FAFB /* Manappv 12.xcdatamodel */;
 			name = Manappv1.xcdatamodeld;
 			path = Resource/Data/Manappv1.xcdatamodeld;
 			sourceTree = "<group>";
