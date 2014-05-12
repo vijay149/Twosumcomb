@@ -895,7 +895,8 @@
         
         NSDate *date = [NSDate fromString:self.viewMoodDetail.txtDate.text];
         PartnerMood *mood = [[DatabaseHelper sharedHelper] addMoodValue:moodValue forPartner:[[MASession sharedSession] currentPartner] date:date];
-        
+        //User input
+        mood.isUserInput = [NSNumber numberWithBool:YES];
             //check the cycle number
             NSLog(@"added time %@",mood.addedTime);
             NSInteger cycle = [NSDate dayBetweenDay:[mood.addedTime beginningAtMidnightOfDay] andDay:[date beginningAtMidnightOfDay]]/ 30;
@@ -907,7 +908,6 @@
         if(mood){
             //remove the previous mood notification in this day
             [[MANotificationManager sharedInstance] removeMoodNotificationOfPartner:[[MASession sharedSession] currentPartner] atDate:date];
-            
             // add notification for mood (reminder after 3 days)
             [[MANotificationManager sharedInstance] setNotificationForMood:mood forPartner:[[MASession sharedSession] currentPartner]];
         }

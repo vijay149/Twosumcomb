@@ -45,12 +45,16 @@
         NSLog(@"added time %@",firstMood.addedTime);
         NSInteger cycle = [NSDate dayBetweenDay:[firstMood.addedTime beginningAtMidnightOfDay] andDay:[date beginningAtMidnightOfDay]]/ 30;
         NSInteger day = [NSDate dayBetweenDay:[firstMood.addedTime beginningAtMidnightOfDay] andDay:[date beginningAtMidnightOfDay]]% 30 + 1;
-//        if (cycle != MA_MOOD_UNAVAILABLE_VALUE) {
-//            return [MoodHelper moodAtCycle:cycle forDay:day firstMoodDate:firstMood.addedTime forPartner:partner];
-//        } else  {
-//            return 0;
-//        }
-        //return [MoodHelper moodAtCycle:cycle forDay:day firstMoodDate:firstMood.addedTime forPartner:partner];
+
+        PartnerMood *moodAtDate = [[DatabaseHelper sharedHelper] partnerMoodWithPartner:partner date:date];
+        if (moodAtDate) {
+            if ([moodAtDate.isUserInput boolValue]) {
+                 NSString *key = [NSString stringWithFormat:@"kMood_%d_%d_%f_%d", cycle, day, [firstMood.addedTime timeIntervalSince1970], partner.partnerID.integerValue];
+                [[EGOCache globalCache] setString:[NSString stringWithFormat:@"%f", [moodAtDate.moodValue floatValue]] forKey:key];
+                return [moodAtDate.moodValue floatValue];
+            }
+        }
+        
         CGFloat result = [MoodHelper moodAtCycle:cycle forDay:day firstMoodDate:firstMood.addedTime forPartner:partner];
         return result;
     }
@@ -108,10 +112,8 @@
             return mood.moodValue.floatValue;
         }
         else{
-           
             [[EGOCache globalCache] setString:[NSString stringWithFormat:@"%d", MA_MOOD_UNAVAILABLE_VALUE] forKey:key];
             return MA_MOOD_UNAVAILABLE_VALUE;
-            
         }
     }
     else if(cycle == 1 || cycle == 2){
