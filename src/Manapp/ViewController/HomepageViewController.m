@@ -409,7 +409,6 @@
     [self.settingItems addObject:MANAPP_SETTING_MENU_ITEM_CHANGE_EMAIL];
     [self.settingItems addObject:MANAPP_SETTING_MENU_ITEM_LOGOUT];
     [self.pickerSetting reloadAllComponents];
-    [self.pickerSetting setBackgroundColor:[UIColor whiteColor]];
 
     
     //setting UI
@@ -426,6 +425,7 @@
         // COMMENT: generate setting picker
         CGRect pickerFrame = CGRectMake(0, 40, 0, 0);
         _pickerSetting = [[UIPickerView alloc] initWithFrame:pickerFrame];
+        _pickerSetting.backgroundColor = RGB(214, 224, 230);
         _pickerSetting.showsSelectionIndicator = YES;
         _pickerSetting.dataSource = self;
         _pickerSetting.delegate = self;
