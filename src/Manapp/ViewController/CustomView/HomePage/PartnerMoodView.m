@@ -92,6 +92,7 @@
         // COMMENT: generate setting picker
         CGRect pickerFrame = CGRectMake(0, 40, 0, 0);
         _datePicker = [[UIDatePicker alloc] initWithFrame:pickerFrame];
+        _datePicker.backgroundColor = [UIColor whiteColor];
         [self.datePicker setDatePickerMode:UIDatePickerModeDate];
         [self.datePicker addTarget:self action:@selector(datePicker_valueChanged:) forControlEvents:UIControlEventValueChanged];
         [self.actionSheetDatePicker addSubview:self.datePicker];
