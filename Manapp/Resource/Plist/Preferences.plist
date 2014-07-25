@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Food/Beverage</string>
+		<key>categories</key>
+		<array>
+			<string>Food Type</string>
+			<string>Restaurant</string>
+			<string>Cocktail</string>
+			<string>Beer</string>
+			<string>Wine</string>
+			<string>Non-alcohotic drink</string>
+			<string>Coffee preference</string>
+			<string>Vegatable</string>
+			<string>Meat</string>
+			<string>Fish</string>
+			<string>Desert</string>
+			<string>Spicy</string>
+			<string>Chocolate</string>
+			<string>Other</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Entertainment</string>
+		<key>categories</key>
+		<array>
+			<string>Music Type</string>
+			<string>Singer</string>
+			<string>Band</string>
+			<string>Dance</string>
+			<string>Restaurant</string>
+			<string>Author</string>
+			<string>Actor</string>
+			<string>Team</string>
+			<string>Sport</string>
+			<string>Pastime/Hobby</string>
+			<string>Book</string>
+			<string>Movie</string>
+			<string>TV Show</string>
+			<string>Board Game</string>
+			<string>Card Game</string>
+			<string>Interest</string>
+			<string>Play/Opera/Ballet</string>
+			<string>Other</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>People</string>
+		<key>categories</key>
+		<array>
+			<string>Singer</string>
+			<string>Band</string>
+			<string>Author</string>
+			<string>Actor</string>
+			<string>Director</string>
+			<string>Artist</string>
+			<string>Politicial</string>
+			<string>Role Model</string>
+			<string>Athlete</string>
+			<string>Designer</string>
+			<string>Friend</string>
+			<string>Family Member</string>
+			<string>Other</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Places</string>
+		<key>categories</key>
+		<array>
+			<string>Restaurant</string>
+			<string>Hair Salon</string>
+			<string>Nail Salon</string>
+			<string>Spa</string>
+			<string>Clothing Store</string>
+			<string>Vacation Destination</string>
+			<string>Hiking Trail</string>
+			<string>Sky Resort</string>
+			<string>City</string>
+			<string>Country</string>
+			<string>Art Gallery</string>
+			<string>Museum</string>
+			<string>Other</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Things</string>
+		<key>categories</key>
+		<array>
+			<string>Restaurant</string>
+			<string>Flower</string>
+			<string>Season</string>
+			<string>Book</string>
+			<string>Movie</string>
+			<string>Perfume</string>
+			<string>Animal</string>
+			<string>Color</string>
+			<string>Smell</string>
+			<string>Fabric/Material</string>
+			<string>Vehicle Brand</string>
+			<string>Shoe Brand</string>
+			<string>Holidays</string>
+			<string>Other</string>
+		</array>
+	</dict>
+</array>
+</plist>

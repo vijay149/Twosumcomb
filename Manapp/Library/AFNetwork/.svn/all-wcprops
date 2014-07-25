@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork
+END
+AFHTTPClient.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFHTTPClient.m
+END
+AFNetworking.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFNetworking.h
+END
+AFXMLRequestOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFXMLRequestOperation.h
+END
+AFNetworkActivityIndicatorManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFNetworkActivityIndicatorManager.h
+END
+UIImageView+AFNetworking.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/UIImageView+AFNetworking.h
+END
+AFXMLRequestOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFXMLRequestOperation.m
+END
+AFURLConnectionOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFURLConnectionOperation.h
+END
+AFNetworkActivityIndicatorManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFNetworkActivityIndicatorManager.m
+END
+AFJSONRequestOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFJSONRequestOperation.h
+END
+UIImageView+AFNetworking.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/UIImageView+AFNetworking.m
+END
+AFJSONUtilities.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFJSONUtilities.h
+END
+AFJSONRequestOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFJSONRequestOperation.m
+END
+AFURLConnectionOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFURLConnectionOperation.m
+END
+AFHTTPRequestOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFHTTPRequestOperation.h
+END
+AFPropertyListRequestOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFPropertyListRequestOperation.h
+END
+AFJSONUtilities.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFJSONUtilities.m
+END
+AFImageRequestOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFImageRequestOperation.h
+END
+AFHTTPRequestOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFHTTPRequestOperation.m
+END
+AFHTTPClient.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFHTTPClient.h
+END
+AFPropertyListRequestOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFPropertyListRequestOperation.m
+END
+AFImageRequestOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/usa/!svn/ver/13216/ManApp/ManApp_iPhone/ManApp/ManApp/3rdParties/AFNetwork/AFImageRequestOperation.m
+END

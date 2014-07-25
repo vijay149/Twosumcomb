@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Medical Condition</string>
+	<string>Food Allergies</string>
+	<string>Other allergies</string>
+	<string>Diet type</string>
+	<string>Religion</string>
+	<string>Political Party</string>
+	<string>Mother&apos;s name</string>
+	<string>Father&apos;s name</string>
+	<string>Children</string>
+	<string>Pets</string>
+	<string>Car type</string>
+	<string>Other</string>
+</array>
+</plist>
